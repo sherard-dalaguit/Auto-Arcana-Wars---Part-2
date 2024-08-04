@@ -1,0 +1,528 @@
+
+-------------------- Round 1. --------------------
+	
+	[Mage, Mage, Warrior, Mage, Mage] ------ VS ------ [Ninja, Mage, Warrior, Mage, Mage]
+		Mage [79.0/79.0] VS Ninja [73.0/73.0]
+			Opponent's Ninja performed Special Attack: A precise poisoned dagger shot designed to incapacitate most opponents, dealing 70.0 Physical Damage. Your Mage lost 67.900 HP.
+		Mage [11.1/79.0] VS Ninja [73.0/73.0]
+			Your Mage performed a Basic Attack, dealing 19 Physical Damage. Opponent's Ninja lost 11.590 HP.
+		Mage [11.1/79.0] VS Ninja [61.4/73.0]
+			Opponent's Ninja performed a Basic Attack, dealing 60 Physical Damage. Your Mage lost 58.200 HP. It fainted.
+	
+	[Mage, Mage, Warrior, Mage] ------ VS ------ [Ninja, Mage, Warrior, Mage, Mage]
+		Mage [100.0/100.0] VS Ninja [61.4/73.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 177.875 Magic Damage. Opponent's Ninja lost 115.619 HP. It fainted.
+	
+	[Mage, Mage, Warrior, Mage] ------ VS ------ [Mage, Warrior, Mage, Mage]
+		Mage [100.0/100.0] VS Mage [84.0/84.0]
+			Opponent's Mage performed Special Attack: A lullaby to deep sleep, dealing 77.25 Magic Damage. Your Mage lost 73.388 HP.
+		Mage [26.6/100.0] VS Mage [84.0/84.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Mage lost 31.360 HP.
+		Mage [26.6/100.0] VS Mage [52.6/84.0]
+			Opponent's Mage performed Special Attack: A lullaby to deep sleep, dealing 77.25 Magic Damage. Your Mage lost 73.388 HP. It fainted.
+	
+	[Mage, Mage, Warrior] ------ VS ------ [Mage, Warrior, Mage, Mage]
+		Warrior [346.9/346.9] VS Mage [52.6/84.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Mage lost 25.480 HP.
+		Warrior [346.9/346.9] VS Mage [27.2/84.0]
+			Opponent's Mage performed Special Attack: A lullaby to deep sleep, dealing 77.25 Magic Damage. Your Warrior lost 40.943 HP.
+		Warrior [306.0/346.9] VS Mage [27.2/84.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Mage lost 25.480 HP.
+		Warrior [306.0/346.9] VS Mage [1.7/84.0]
+			Opponent's Mage performed Special Attack: A lullaby to deep sleep, dealing 77.25 Magic Damage. Your Warrior lost 40.943 HP.
+		Warrior [265.0/346.9] VS Mage [1.7/84.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Mage lost 25.480 HP. It fainted.
+	
+	[Mage, Mage, Warrior] ------ VS ------ [Warrior, Mage, Mage]
+		Warrior [265.0/346.9] VS Warrior [254.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [241.9/346.9] VS Warrior [254.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [241.9/346.9] VS Warrior [242.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [218.8/346.9] VS Warrior [242.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [218.8/346.9] VS Warrior [230.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [195.7/346.9] VS Warrior [230.6/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [195.7/346.9] VS Warrior [218.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [172.6/346.9] VS Warrior [218.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [172.6/346.9] VS Warrior [207.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [149.5/346.9] VS Warrior [207.2/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [149.5/346.9] VS Warrior [195.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [126.4/346.9] VS Warrior [195.5/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [126.4/346.9] VS Warrior [183.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [103.3/346.9] VS Warrior [183.8/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [103.3/346.9] VS Warrior [172.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [80.2/346.9] VS Warrior [172.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [80.2/346.9] VS Warrior [160.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [57.1/346.9] VS Warrior [160.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [57.1/346.9] VS Warrior [148.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [34.0/346.9] VS Warrior [148.7/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [34.0/346.9] VS Warrior [137.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP.
+		Warrior [10.9/346.9] VS Warrior [137.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 11.700 HP.
+		Warrior [10.9/346.9] VS Warrior [125.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Warrior lost 23.100 HP. It fainted.
+	
+	[Mage, Mage] ------ VS ------ [Warrior, Mage, Mage]
+		Mage [86.0/86.0] VS Warrior [125.3/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 20.845 HP.
+		Mage [86.0/86.0] VS Warrior [104.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 31.350 HP.
+		Mage [54.6/86.0] VS Warrior [104.5/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 20.845 HP.
+		Mage [54.6/86.0] VS Warrior [83.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 31.350 HP.
+		Mage [23.3/86.0] VS Warrior [83.6/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 20.845 HP.
+		Mage [23.3/86.0] VS Warrior [62.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 31.350 HP. It fainted.
+	
+	[Mage] ------ VS ------ [Warrior, Mage, Mage]
+		Mage [93.0/93.0] VS Warrior [62.8/254.0]
+			Your Mage performed a Basic Attack, dealing 17 Physical Damage. Opponent's Warrior lost 7.650 HP.
+		Mage [93.0/93.0] VS Warrior [55.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 32.010 HP.
+		Mage [61.0/93.0] VS Warrior [55.1/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 84.75 Magic Damage. Opponent's Warrior lost 18.645 HP.
+		Mage [61.0/93.0] VS Warrior [36.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 32.010 HP.
+		Mage [29.0/93.0] VS Warrior [36.5/254.0]
+			Your Mage performed a Basic Attack, dealing 17 Physical Damage. Opponent's Warrior lost 7.650 HP.
+		Mage [29.0/93.0] VS Warrior [28.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 33 Physical Damage. Your Mage lost 32.010 HP. It fainted.
+
+Outcome: LOSS. Series Score: 0-1.
+
+-------------------- Round 2. --------------------
+	
+	[Mage, Mage, Mage, Mage, Warrior] ------ VS ------ [Mage, Warrior, Ninja, Mage, Mage]
+		Warrior [346.9/346.9] VS Mage [75.0/75.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Mage lost 34.920 HP.
+		Warrior [346.9/346.9] VS Mage [40.1/75.0]
+			Opponent's Mage performed a Basic Attack, dealing 23 Physical Damage. Your Warrior lost 16.100 HP.
+		Warrior [330.8/346.9] VS Mage [40.1/75.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Mage lost 34.920 HP.
+		Warrior [330.8/346.9] VS Mage [5.2/75.0]
+			Opponent's Mage performed Special Attack: A lullaby to deep sleep, dealing 132.875 Magic Damage. Your Warrior lost 70.424 HP.
+		Warrior [260.4/346.9] VS Mage [5.2/75.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Mage lost 34.920 HP. It fainted.
+	
+	[Mage, Mage, Mage, Mage, Warrior] ------ VS ------ [Warrior, Ninja, Mage, Mage]
+		Warrior [260.4/346.9] VS Warrior [254.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [240.1/346.9] VS Warrior [254.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [240.1/346.9] VS Warrior [236.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [219.8/346.9] VS Warrior [236.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [219.8/346.9] VS Warrior [218.7/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [219.8/346.9] VS Warrior [254.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [219.8/346.9] VS Warrior [236.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [199.5/346.9] VS Warrior [236.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [199.5/346.9] VS Warrior [218.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [179.2/346.9] VS Warrior [218.7/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [179.2/346.9] VS Warrior [201.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [158.9/346.9] VS Warrior [201.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [158.9/346.9] VS Warrior [183.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [138.6/346.9] VS Warrior [183.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [138.6/346.9] VS Warrior [165.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [118.3/346.9] VS Warrior [165.8/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [118.3/346.9] VS Warrior [148.2/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [118.3/346.9] VS Warrior [225.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [118.3/346.9] VS Warrior [208.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [98.0/346.9] VS Warrior [208.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [98.0/346.9] VS Warrior [190.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [77.7/346.9] VS Warrior [190.6/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [77.7/346.9] VS Warrior [173.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [57.4/346.9] VS Warrior [173.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [57.4/346.9] VS Warrior [155.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [37.1/346.9] VS Warrior [155.4/254.0]
+			Your Warrior performed Special Attack: A call to the shield hero, healing 177.5 HP.
+		Warrior [214.6/346.9] VS Warrior [155.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [194.3/346.9] VS Warrior [155.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [194.3/346.9] VS Warrior [137.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [174.0/346.9] VS Warrior [137.7/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [174.0/346.9] VS Warrior [120.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [153.7/346.9] VS Warrior [120.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [153.7/346.9] VS Warrior [102.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [133.4/346.9] VS Warrior [102.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [133.4/346.9] VS Warrior [84.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [113.1/346.9] VS Warrior [84.8/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [113.1/346.9] VS Warrior [67.2/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [113.1/346.9] VS Warrior [144.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [113.1/346.9] VS Warrior [127.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [92.8/346.9] VS Warrior [127.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [92.8/346.9] VS Warrior [109.6/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [92.8/346.9] VS Warrior [187.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [92.8/346.9] VS Warrior [169.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [72.5/346.9] VS Warrior [169.7/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [72.5/346.9] VS Warrior [152.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [52.2/346.9] VS Warrior [152.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [52.2/346.9] VS Warrior [134.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [31.9/346.9] VS Warrior [134.5/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [31.9/346.9] VS Warrior [116.8/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [31.9/346.9] VS Warrior [194.6/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [31.9/346.9] VS Warrior [176.9/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [31.9/346.9] VS Warrior [254.0/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [31.9/346.9] VS Warrior [236.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [11.6/346.9] VS Warrior [236.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 36 Physical Damage. Opponent's Warrior lost 17.640 HP.
+		Warrior [11.6/346.9] VS Warrior [218.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP. It fainted.
+	
+	[Mage, Mage, Mage, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage]
+		Mage [86.0/86.0] VS Warrior [218.7/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [86.0/86.0] VS Warrior [198.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [58.5/86.0] VS Warrior [198.8/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [58.5/86.0] VS Warrior [178.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [30.9/86.0] VS Warrior [178.9/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [30.9/86.0] VS Warrior [159.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [3.4/86.0] VS Warrior [159.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [3.4/86.0] VS Warrior [139.1/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [3.4/86.0] VS Warrior [216.9/254.0]
+			Your Mage performed a Basic Attack, dealing 27 Physical Damage. Opponent's Warrior lost 13.230 HP.
+		Mage [3.4/86.0] VS Warrior [203.7/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [3.4/86.0] VS Warrior [254.0/254.0]
+			Your Mage performed a Basic Attack, dealing 27 Physical Damage. Opponent's Warrior lost 13.230 HP.
+		Mage [3.4/86.0] VS Warrior [240.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP. It fainted.
+	
+	[Mage, Mage, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage]
+		Mage [93.0/93.0] VS Warrior [240.8/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 107.25 Magic Damage. It missed Opponent's Warrior.
+		Mage [93.0/93.0] VS Warrior [240.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [64.9/93.0] VS Warrior [240.8/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 107.25 Magic Damage. Opponent's Warrior lost 22.522 HP.
+		Mage [64.9/93.0] VS Warrior [218.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. It missed Your Mage.
+		Mage [64.9/93.0] VS Warrior [218.2/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 107.25 Magic Damage. Opponent's Warrior lost 22.522 HP.
+		Mage [64.9/93.0] VS Warrior [195.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [36.7/93.0] VS Warrior [195.7/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 107.25 Magic Damage. Opponent's Warrior lost 22.522 HP.
+		Mage [36.7/93.0] VS Warrior [173.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [8.6/93.0] VS Warrior [173.2/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 107.25 Magic Damage. Opponent's Warrior lost 22.522 HP.
+		Mage [8.6/93.0] VS Warrior [150.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP. It fainted.
+	
+	[Mage, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage]
+		Mage [79.0/79.0] VS Warrior [150.7/254.0]
+			Your Mage performed a Basic Attack, dealing 15 Physical Damage. Opponent's Warrior lost 7.350 HP.
+		Mage [79.0/79.0] VS Warrior [143.3/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [79.0/79.0] VS Warrior [221.1/254.0]
+			Your Mage performed a Basic Attack, dealing 15 Physical Damage. Opponent's Warrior lost 7.350 HP.
+		Mage [79.0/79.0] VS Warrior [213.7/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [79.0/79.0] VS Warrior [254.0/254.0]
+			Your Mage performed a Basic Attack, dealing 15 Physical Damage. Opponent's Warrior lost 7.350 HP.
+		Mage [79.0/79.0] VS Warrior [246.7/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [79.0/79.0] VS Warrior [254.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 63.5 Magic Damage. Opponent's Warrior lost 13.335 HP.
+		Mage [79.0/79.0] VS Warrior [240.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [50.9/79.0] VS Warrior [240.7/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 63.5 Magic Damage. Opponent's Warrior lost 13.335 HP.
+		Mage [50.9/79.0] VS Warrior [227.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [22.7/79.0] VS Warrior [227.3/254.0]
+			Your Mage performed a Basic Attack, dealing 15 Physical Damage. Opponent's Warrior lost 7.350 HP.
+		Mage [22.7/79.0] VS Warrior [220.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP. It fainted.
+	
+	[Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage]
+		Mage [100.0/100.0] VS Warrior [220.0/254.0]
+			Your Mage performed a Basic Attack, dealing 22 Physical Damage. Opponent's Warrior lost 10.780 HP.
+		Mage [100.0/100.0] VS Warrior [209.2/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [100.0/100.0] VS Warrior [254.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [100.0/100.0] VS Warrior [234.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [72.5/100.0] VS Warrior [234.1/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [72.5/100.0] VS Warrior [214.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [44.9/100.0] VS Warrior [214.2/254.0]
+			Your Mage performed a Basic Attack, dealing 22 Physical Damage. Opponent's Warrior lost 10.780 HP.
+		Mage [44.9/100.0] VS Warrior [203.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [17.4/100.0] VS Warrior [203.4/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [17.4/100.0] VS Warrior [183.5/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [17.4/100.0] VS Warrior [254.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 94.75 Magic Damage. Opponent's Warrior lost 19.897 HP.
+		Mage [17.4/100.0] VS Warrior [234.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP. It fainted.
+
+Outcome: LOSS. Series Score: 0-2.
+
+-------------------- Round 3. --------------------
+	
+	[Mage, Warrior, Mage, Mage, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage, Mage]
+		Mage [93.0/93.0] VS Warrior [254.0/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [64.9/93.0] VS Warrior [254.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 84.75 Magic Damage. Opponent's Warrior lost 17.797 HP.
+		Mage [64.9/93.0] VS Warrior [236.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [36.7/93.0] VS Warrior [236.2/254.0]
+			Your Mage performed a Basic Attack, dealing 17 Physical Damage. Opponent's Warrior lost 8.330 HP.
+		Mage [36.7/93.0] VS Warrior [227.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [8.6/93.0] VS Warrior [227.9/254.0]
+			Your Mage performed a Basic Attack, dealing 17 Physical Damage. Opponent's Warrior lost 8.330 HP.
+		Mage [8.6/93.0] VS Warrior [219.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP. It fainted.
+	
+	[Mage, Warrior, Mage, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage, Mage]
+		Mage [86.0/86.0] VS Warrior [219.5/254.0]
+			Your Mage performed a Basic Attack, dealing 31 Physical Damage. It missed Opponent's Warrior.
+		Mage [86.0/86.0] VS Warrior [219.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [58.5/86.0] VS Warrior [219.5/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 117.25 Magic Damage. Opponent's Warrior lost 24.623 HP.
+		Mage [58.5/86.0] VS Warrior [194.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [30.9/86.0] VS Warrior [194.9/254.0]
+			Your Mage performed a Basic Attack, dealing 31 Physical Damage. Opponent's Warrior lost 15.190 HP.
+		Mage [30.9/86.0] VS Warrior [179.7/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [30.9/86.0] VS Warrior [254.0/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 117.25 Magic Damage. Opponent's Warrior lost 24.623 HP.
+		Mage [30.9/86.0] VS Warrior [229.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [3.4/86.0] VS Warrior [229.4/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 117.25 Magic Damage. Opponent's Warrior lost 24.623 HP.
+		Mage [3.4/86.0] VS Warrior [204.8/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [3.4/86.0] VS Warrior [254.0/254.0]
+			Your Mage performed a Basic Attack, dealing 31 Physical Damage. Opponent's Warrior lost 15.190 HP.
+		Mage [3.4/86.0] VS Warrior [238.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP. It fainted.
+	
+	[Mage, Warrior, Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage, Mage]
+		Mage [200.0/200.0] VS Warrior [238.8/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 177.875 Magic Damage. Opponent's Warrior lost 37.354 HP.
+		Mage [200.0/200.0] VS Warrior [201.5/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [200.0/200.0] VS Warrior [254.0/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [200.0/200.0] VS Warrior [238.3/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Mage [200.0/200.0] VS Warrior [254.0/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [200.0/200.0] VS Warrior [238.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [172.4/200.0] VS Warrior [238.3/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [172.4/200.0] VS Warrior [222.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [144.9/200.0] VS Warrior [222.6/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 177.875 Magic Damage. Opponent's Warrior lost 37.354 HP.
+		Mage [144.9/200.0] VS Warrior [185.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [117.3/200.0] VS Warrior [185.3/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [117.3/200.0] VS Warrior [169.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [89.8/200.0] VS Warrior [169.6/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [89.8/200.0] VS Warrior [153.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [62.2/200.0] VS Warrior [153.9/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 177.875 Magic Damage. Opponent's Warrior lost 37.354 HP.
+		Mage [62.2/200.0] VS Warrior [116.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [34.7/200.0] VS Warrior [116.6/254.0]
+			Your Mage performed a Basic Attack, dealing 32 Physical Damage. Opponent's Warrior lost 15.680 HP.
+		Mage [34.7/200.0] VS Warrior [100.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP.
+		Mage [7.1/200.0] VS Warrior [100.9/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 177.875 Magic Damage. Opponent's Warrior lost 37.354 HP.
+		Mage [7.1/200.0] VS Warrior [63.5/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 27.550 HP. It fainted.
+	
+	[Mage, Warrior] ------ VS ------ [Warrior, Ninja, Mage, Mage, Mage]
+		Warrior [213.0/213.0] VS Warrior [63.5/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [213.0/213.0] VS Warrior [50.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [192.7/213.0] VS Warrior [50.8/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. It missed Opponent's Warrior.
+		Warrior [192.7/213.0] VS Warrior [50.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [172.4/213.0] VS Warrior [50.8/254.0]
+			Your Warrior performed Special Attack: A call to the shield hero, healing 78.5 HP.
+		Warrior [213.0/213.0] VS Warrior [50.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [192.7/213.0] VS Warrior [50.8/254.0]
+			Your Warrior performed Special Attack: A call to the shield hero, healing 78.5 HP.
+		Warrior [213.0/213.0] VS Warrior [50.8/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [192.7/213.0] VS Warrior [50.8/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [192.7/213.0] VS Warrior [38.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [172.4/213.0] VS Warrior [38.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [172.4/213.0] VS Warrior [25.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [152.1/213.0] VS Warrior [25.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. It missed Opponent's Warrior.
+		Warrior [152.1/213.0] VS Warrior [25.3/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [131.8/213.0] VS Warrior [25.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [131.8/213.0] VS Warrior [12.6/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [131.8/213.0] VS Warrior [90.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [131.8/213.0] VS Warrior [77.6/254.0]
+			Opponent's Warrior performed Special Attack: A call to the shield hero, healing 77.75 HP.
+		Warrior [131.8/213.0] VS Warrior [155.3/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [131.8/213.0] VS Warrior [142.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [111.5/213.0] VS Warrior [142.6/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [111.5/213.0] VS Warrior [129.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. It missed Your Warrior.
+		Warrior [111.5/213.0] VS Warrior [129.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [111.5/213.0] VS Warrior [117.1/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [91.2/213.0] VS Warrior [117.1/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [91.2/213.0] VS Warrior [104.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [70.9/213.0] VS Warrior [104.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [70.9/213.0] VS Warrior [91.6/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [50.6/213.0] VS Warrior [91.6/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [50.6/213.0] VS Warrior [78.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [30.3/213.0] VS Warrior [78.9/254.0]
+			Your Warrior performed Special Attack: A call to the shield hero, healing 78.5 HP.
+		Warrior [108.8/213.0] VS Warrior [78.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [88.5/213.0] VS Warrior [78.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [88.5/213.0] VS Warrior [66.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [68.2/213.0] VS Warrior [66.2/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [68.2/213.0] VS Warrior [53.4/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [47.9/213.0] VS Warrior [53.4/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [47.9/213.0] VS Warrior [40.7/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [27.6/213.0] VS Warrior [40.7/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [27.6/213.0] VS Warrior [27.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP.
+		Warrior [7.3/213.0] VS Warrior [27.9/254.0]
+			Your Warrior performed a Basic Attack, dealing 26 Physical Damage. Opponent's Warrior lost 12.740 HP.
+		Warrior [7.3/213.0] VS Warrior [15.2/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Warrior lost 20.300 HP. It fainted.
+	
+	[Mage] ------ VS ------ [Warrior, Ninja, Mage, Mage, Mage]
+		Mage [79.0/79.0] VS Warrior [15.2/254.0]
+			Your Mage performed Special Attack: A lullaby to deep sleep, dealing 63.5 Magic Damage. Opponent's Warrior lost 13.335 HP.
+		Mage [79.0/79.0] VS Warrior [1.9/254.0]
+			Opponent's Warrior performed a Basic Attack, dealing 29 Physical Damage. Your Mage lost 28.130 HP.
+		Mage [50.9/79.0] VS Warrior [1.9/254.0]
+			Your Mage performed a Basic Attack, dealing 15 Physical Damage. Opponent's Warrior lost 7.350 HP. It fainted.
+	
+	[Mage] ------ VS ------ [Ninja, Mage, Mage, Mage]
+		Mage [50.9/79.0] VS Ninja [73.0/73.0]
+			Opponent's Ninja performed Special Attack: A precise poisoned dagger shot designed to incapacitate most opponents, dealing 70.0 Physical Damage. Your Mage lost 67.900 HP. It fainted.
+
+Outcome: LOSS. Series Score: 0-3.
+
+-------------------- You lost 0-3. --------------------

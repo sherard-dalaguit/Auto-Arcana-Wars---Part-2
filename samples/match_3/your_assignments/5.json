@@ -1,0 +1,93 @@
+[
+    {
+        "character": {
+            "name": "warrior",
+            "stats": {
+                "hp": 300,
+                "armor": 29,
+                "magic_resistance": 42,
+                "physical_power": 24,
+                "magic_power": 2,
+                "special_trigger_chance": 16
+            }
+        },
+        "items": [
+            {
+                "name": "magic_cauldron",
+                "stats": {
+                    "hp": 75
+                }
+            }
+        ]
+    },
+    {
+        "character": {
+            "name": "warrior",
+            "stats": {
+                "hp": 200,
+                "armor": 22,
+                "magic_resistance": 50,
+                "physical_power": 29,
+                "magic_power": 1,
+                "special_trigger_chance": 13
+            }
+        },
+        "items": [
+            {
+                "name": "solid_rock",
+                "stats": {
+                    "armor": 20,
+                    "magic_resistance": 35
+                }
+            }
+        ]
+    },
+    {
+        "character": {
+            "name": "warrior",
+            "stats": {
+                "hp": 240,
+                "armor": 30,
+                "magic_resistance": 44,
+                "physical_power": 25,
+                "magic_power": 3,
+                "special_trigger_chance": 12
+            }
+        },
+        "items": [
+            {
+                "name": "enchanted_sword",
+                "stats": {
+                    "physical_power": 6,
+                    "magic_power": 2
+                }
+            }
+        ]
+    },
+    {
+        "character": {
+            "name": "mage",
+            "stats": {
+                "hp": 93,
+                "armor": 0,
+                "magic_resistance": 5,
+                "physical_power": 23,
+                "magic_power": 50,
+                "special_trigger_chance": 50
+            }
+        }
+    },
+    {
+        "character": {
+            "name": "warrior",
+            "stats": {
+                "hp": 288,
+                "armor": 24,
+                "magic_resistance": 47,
+                "physical_power": 27,
+                "magic_power": 4,
+                "special_trigger_chance": 12
+            }
+        }
+    }
+]
