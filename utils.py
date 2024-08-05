@@ -12,7 +12,7 @@ class RngEngine:
 				It is already created where needed
 
 		Keyword Arguments:
-			seed -- the psuedo rng seed to use (default: {56})
+			seed -- the pseudo rng seed to use (default: {56})
 		"""
 		self._rand = np.random.default_rng(seed=seed)
 
