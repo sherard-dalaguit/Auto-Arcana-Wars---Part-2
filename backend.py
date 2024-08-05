@@ -15,25 +15,22 @@ def play_turn(your_character: BaseCharacter,
     Arguments:
         your_character -- your character in the combat
         opponent_character -- the opponent's character
-        is_your_move -- whether or not it is your move or not
+        is_your_move -- whether it is your move or not
         rng_engine -- the rng system handling the randomness in the game
 
     Returns:
         the description of what happened in the move
     """  
-    special_chance = 0.0 # change this
-    is_attack_special = rng_engine.rng(probability= special_chance) # DO NOT change this line
+    special_chance = 0.0  # change this
+    is_attack_special = rng_engine.rng(probability=special_chance)  # DO NOT change this line
 
-        
-    damage = None # change this
+    damage = None  # change this
     
-    if damage is not None: # DO NOT change this line
-        miss_chance = 0.0 # change this
-        is_damage_missed = rng_engine.rng(probability= miss_chance) # DO NOT change this line
+    if damage is not None:  # DO NOT change this line
+        miss_chance = 0.0  # change this
+        is_damage_missed = rng_engine.rng(probability=miss_chance)  # DO NOT change this line
             
     return ""
-
-
 
 
 def play_match(your_assignments: Path, 
@@ -52,9 +49,9 @@ def play_match(your_assignments: Path,
             - the turn-by-turn breakdown of what happened throughout
     """
     
-    is_your_turn_first = rng_engine.rng(probability= 50) # DO NOT change this line
+    is_your_turn_first = rng_engine.rng(probability=50)  # DO NOT change this line
         
-    return (False,  [])
+    return False, []
     
     
 if __name__ == "__main__":
@@ -73,13 +70,13 @@ if __name__ == "__main__":
                         required=False)
     parser.add_argument("--output_file", 
                         type=str, 
-                        help= "The location to the text file to store the output in.", 
+                        help="The location to the text file to store the output in.",
                         default=None, 
                         required=False)
     args = parser.parse_args()
     your_assignments = Path(args.your_assignments)
     opponent_assignments = Path(args.opponent_assignments)
-    rng_engine = RngEngine() # DO NOT change this line
+    rng_engine = RngEngine()  # DO NOT change this line
     match_outcome, description = play_match(your_assignments=your_assignments, 
                opponent_assignments=opponent_assignments, 
                rng_engine=rng_engine)
