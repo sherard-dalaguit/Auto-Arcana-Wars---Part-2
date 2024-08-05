@@ -91,6 +91,17 @@ class Stats(NamedTuple):
 		"""
 
 
+class Damage(NamedTuple):
+	physical: float = 0.0
+	magic: float = 0.0
+
+
+class Attack(NamedTuple):
+	damage: Damage = None
+	stat_updates_to_self: Stats = None  # for when a character's move changes its own stats
+	description: str = None
+
+
 class BaseItem(abc.ABC):
 	"""
 	BaseItem is an abstract base class the represents a generic
@@ -256,8 +267,25 @@ class BaseCharacter(abc.ABC):
 		"""
 		pass
 
+	@property
+	def basic_attack(self) -> Attack:
+		"""
+		Here, you implement the universal basic attack for all the characters.
+		It is based on the effective_stats of self. In the description, make sure to keep
+		track of your character's name, the damage done, the move, etc.
+
+		NOTE: this method is a property: it takes no input and its output does not change.
+		This is by design: damage done and HP lost are separate
+		"""
+		damage_dealt = Damage(self.effective_stats.physical_power)
+		basic_attack_description = f"""
+		{self.name} performed a Basic Attack, dealing {damage_dealt.physical} Physical Damage.
+		"""
+		return Attack(damage=damage_dealt, description=basic_attack_description)
+
+	@property
 	@abc.abstractmethod
-	def special_attack(self) -> float:
+	def special_attack(self) -> Attack:
 		pass
 
 	def add_item(self, item: BaseItem = None) -> None:
