@@ -1,4 +1,4 @@
-from utils import BaseCharacter
+from utils import Stats, BaseCharacter, Attack, Damage
 
 
 class Ninja(BaseCharacter):
@@ -9,10 +9,11 @@ class Ninja(BaseCharacter):
 
 	@property
 	def special_attack_name(self) -> str:
-		"""Returns the name of the character and its special attack."""
-		return f"{self.name}: A poisoned dagger shot"
+		"""Returns the name of the character's special attack."""
+		return "Special Attack: A precise poisoned dagger shot designed to incapacitate most opponents"
 
-	def special_attack(self) -> float:
+	@property
+	def special_attack(self) -> Attack:
 		"""
 		Performs the Ninja's special attack: A poisoned dagger shot.
 
@@ -23,9 +24,13 @@ class Ninja(BaseCharacter):
 			float: The character's special attack damage
 		"""
 
-		damage = 40 + 0.5 * self.base_stats.physical_power + 0.5 * self.base_stats.magic_power
+		new_damage = 40 + 0.5 * self.effective_stats.physical_power + 0.5 * self.effective_stats.magic_power
+		damage_dealt = Damage(physical=new_damage)
+		special_attack_description = f"""
+		{self.name} performed {self.special_attack_name}, dealing {damage_dealt.physical} Physical Damage.
+		"""
 
-		return damage
+		return Attack(damage=damage_dealt, description=special_attack_description)
 
 
 class Mage(BaseCharacter):
@@ -36,10 +41,11 @@ class Mage(BaseCharacter):
 
 	@property
 	def special_attack_name(self) -> str:
-		"""Returns the name of the character and its special attack."""
-		return f"{self.name}: A lullaby to deep sleep"
+		"""Returns the name of the character's special attack."""
+		return "Special Attack: A lullaby to deep sleep"
 
-	def special_attack(self) -> float:
+	@property
+	def special_attack(self) -> Attack:
 		"""
 		Performs the Mage's special attack: A lullaby to deep sleep.
 
@@ -50,9 +56,13 @@ class Mage(BaseCharacter):
 			 float: The character's special attack damage
 		"""
 
-		damage = 1 + 1.25 * self.base_stats.magic_power
+		new_damage = 1 + 1.25 * self.effective_stats.magic_power
+		damage_dealt = Damage(magic=new_damage)
+		special_attack_description = f"""
+		{self.name} performed {self.special_attack_name}, dealing {damage_dealt.magic} Magic Damage.
+		"""
 
-		return damage
+		return Attack(damage=damage_dealt, description=special_attack_description)
 
 
 class Warrior(BaseCharacter):
@@ -63,10 +73,11 @@ class Warrior(BaseCharacter):
 
 	@property
 	def special_attack_name(self) -> str:
-		"""Returns the name of the character and its special attack."""
-		return f"{self.name}: A call to the shield hero"
+		"""Returns the name of the character's special attack."""
+		return "Special Attack: A call to the shield hero"
 
-	def special_attack(self) -> float:
+	@property
+	def special_attack(self) -> Attack:
 		"""
 		Performs the Warrior's special attack: A call to the shield hero.
 
@@ -78,6 +89,10 @@ class Warrior(BaseCharacter):
 			float: The character's special attack healing
 		"""
 
-		healing = 50 + 0.75 * self.base_stats.physical_power + 3 * self.base_stats.magic_power
+		healing = 50 + 0.75 * self.effective_stats.physical_power + 3 * self.effective_stats.magic_power
+		healing_amount = min(healing, self.base_stats.total_hp - self.effective_stats.current_hp)
+		special_attack_description = f"""
+		{self.name} performed {self.special_attack_name}, healing {healing_amount} HP.
+		"""
 
-		return healing
+		return Attack(stat_updates_to_self=Stats(current_hp=healing_amount), description=special_attack_description)
