@@ -54,17 +54,29 @@ def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
 
     Returns:
         the description of what happened in the move
-    """  
-    special_chance = 0.0  # change this
+    """
+
+    if is_your_turn:
+        attacker = your_character
+        defender = opponent_character
+    else:
+        attacker = opponent_character
+        defender = your_character
+
+    special_chance = attacker.effective_stats.special_trigger_chance
     is_attack_special = rng_engine.rng(probability=special_chance)  # DO NOT change this line
 
-    damage = None  # change this
+    damage = attacker.basic_attack if not is_attack_special else attacker.special_attack
     
     if damage is not None:  # DO NOT change this line
-        miss_chance = 0.0  # change this
+        miss_chance = calculate_miss_chance(damage.damage, defender.effective_stats)
         is_damage_missed = rng_engine.rng(probability=miss_chance)  # DO NOT change this line
+
+        if not is_damage_missed:
+            defender.effective_stats = defender.effective_stats.add_stat_changes(
+                calculate_damage_taken(damage.damage, defender.effective_stats))
             
-    return ""
+    return damage.description
 
 
 def play_match(your_assignments: Path, 
