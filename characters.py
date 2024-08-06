@@ -89,8 +89,7 @@ class Warrior(BaseCharacter):
 			float: The character's special attack healing
 		"""
 
-		healing = 50 + 0.75 * self.effective_stats.physical_power + 3 * self.effective_stats.magic_power
-		healing_amount = min(healing, self.base_stats.total_hp - self.effective_stats.current_hp)
+		healing_amount = 50 + 0.75 * self.effective_stats.physical_power + 3 * self.effective_stats.magic_power
 		special_attack_description = f"""
 		{self.name} performed {self.special_attack_name}, healing {healing_amount} HP.
 		"""
