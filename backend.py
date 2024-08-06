@@ -1,11 +1,45 @@
 from pathlib import Path
-from utils import RngEngine, BaseCharacter
+from utils import RngEngine, BaseCharacter, Damage, Stats
 
 
-def play_turn(your_character: BaseCharacter, 
-              opponent_character: BaseCharacter, 
-              is_your_turn: bool,
-              rng_engine: RngEngine) -> str:
+def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
+    """
+    Given the damage to be received by a character,
+    calculate the actual damage done, taking into account the character's
+    armor and magic resistance. The output should be the changes to be done to
+    current_hp, provided as Stats
+    """
+
+    damage_dealt = 0
+
+    if damage.physical > 0:
+        damage_dealt += damage.physical * (1 - character_stats.armor / 100)
+
+    if damage.magic > 0:
+        damage_dealt += damage.magic * (1 - character_stats.magic_resistance / 100)
+
+    damage_stats = Stats(current_hp=-damage_dealt)
+    return damage_stats
+
+
+def calculate_miss_chance(damage: Damage, character_stats: Stats) -> float:
+    """
+    Given the damage to be received by a character,
+    calculate the percentage probability (a number between 0 and 100)
+    that the character has to miss the damage entirely.
+    """
+
+    if damage.physical > 0:
+        physical_miss_chance = character_stats.armor / 10
+        return physical_miss_chance
+
+    elif damage.magic > 0:
+        magic_miss_chance = character_stats.magic_resistance / 10
+        return magic_miss_chance
+
+
+def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
+              is_your_turn: bool, rng_engine: RngEngine) -> str:
     """Take a turn in the game, updating the character's stats and returning 
         a description of what happened in the turn
         
