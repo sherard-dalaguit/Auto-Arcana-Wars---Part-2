@@ -1,5 +1,7 @@
 from pathlib import Path
 from utils import RngEngine, BaseCharacter, Damage, Stats
+from game import read_data
+from typing import List
 
 
 def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
@@ -38,9 +40,79 @@ def calculate_miss_chance(damage: Damage, character_stats: Stats) -> float:
         return magic_miss_chance
 
 
+def your_attack(your_character: BaseCharacter, opponent_character: BaseCharacter,
+                rng_engine: RngEngine, event_log: List[str],
+                opponent_team: List[BaseCharacter], opponent_character_index: int) -> None | tuple[BaseCharacter, int]:
+    """
+    Simulates the player's attack on the opponent. Appends the result of the attack to a log.
+    Checks if the opponent character is defeated or not, and if so,
+    increments the opponent character index.
+
+    Arguments:
+        your_character -- The Character representing the player
+        opponent_character -- The Character representation the opponent.
+        rng_engine -- The randomness engine used for the battle simulation.
+        log -- A list containing the log of events of the round.
+        opponent_team -- A list containing the opponent's characters.
+        opponent_character_index -- The index of the opponent's current character in
+        the opponent's team list.
+
+    Returns:
+        Tuple containing the next opponent character and their index, or None if
+        there are no more character's left.
+    """
+
+    event_log.append(play_turn(your_character, opponent_character, True, rng_engine))
+
+    if opponent_character.effective_stats.current_hp <= 0:
+        opponent_character_index += 1
+
+        if opponent_character_index < len(opponent_team):
+            opponent_character = opponent_team[opponent_character_index]
+        else:
+            return None
+
+    return opponent_character, opponent_character_index
+
+
+def opponent_attack(your_character: BaseCharacter, opponent_character: BaseCharacter,
+                    rng_engine: RngEngine, event_log: List[str],
+                    your_team: List[BaseCharacter], your_character_index: int) -> None | tuple[BaseCharacter, int]:
+    """
+    Simulates the opponent's attack on the player. Appends the result of the attack to a log.
+    Checks if the player character is defeated or not, and if so,
+    increments the player character index.
+
+    Arguments:
+        your_character -- The Character representing the player
+        opponent_character -- The Character representation the opponent.
+        rng_engine -- The randomness engine used for the battle simulation.
+        log -- A list containing the log of events of the round.
+        your_team -- A list containing the player's characters.
+        your_character_index -- The index of the player's current character in
+        the player's team list.
+
+    Returns:
+        Tuple containing the next player character and their index, or None if
+        there are no more character's left.
+    """
+
+    event_log.append(play_turn(your_character, opponent_character, False, rng_engine))
+
+    if your_character.effective_stats.current_hp <= 0:
+        your_character_index += 1
+
+        if your_character_index < len(your_team):
+            your_character = your_team[your_character_index]
+        else:
+            return None
+
+    return your_character, your_character_index
+
+
 def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
               is_your_turn: bool, rng_engine: RngEngine) -> str:
-    """Take a turn in the game, updating the character's stats and returning 
+    """Take a turn in the game, updating the character's stats and returning
         a description of what happened in the turn
         
     Raises:
@@ -67,7 +139,7 @@ def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
     is_attack_special = rng_engine.rng(probability=special_chance)  # DO NOT change this line
 
     damage = attacker.basic_attack if not is_attack_special else attacker.special_attack
-    
+
     if damage is not None:  # DO NOT change this line
         miss_chance = calculate_miss_chance(damage.damage, defender.effective_stats)
         is_damage_missed = rng_engine.rng(probability=miss_chance)  # DO NOT change this line
@@ -75,14 +147,68 @@ def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
         if not is_damage_missed:
             defender.effective_stats = defender.effective_stats.add_stat_changes(
                 calculate_damage_taken(damage.damage, defender.effective_stats))
-            
+
     return damage.description
 
 
-def play_match(your_assignments: Path, 
+def play_round(your_assignment: Path, opponent_assignment: Path,
+               is_your_turn_first: bool, rng_engine: RngEngine) -> tuple[bool, list[str]]:
+    """Play the **round** out under the game engine.
+
+    Arguments:
+        your_assignment -- your team assignment for this round
+        opponent_assignment -- the opponent's assignment for this round
+        is_your_turn_first -- whether the first player to take turn is you
+        rng_engine -- the rng system handling the randomness in the game
+
+    Returns:
+        a tuple of the outcome and a list of the **round** breakdown:
+            - whether you won or not: True if you did, False otherwise
+            - the turn-by-turn breakdown of what happened throughout
+    """
+
+    your_team = read_data(your_assignment)
+    opponent_team = read_data(opponent_assignment)
+
+    outcome, event_log = True, []
+
+    your_character_index, opponent_character_index = 0, 0
+
+    while your_character_index < len(your_team) and opponent_character_index < len(opponent_team):
+        your_character = your_team[your_character_index]
+        opponent_character = opponent_team[opponent_character_index]
+
+        if not your_character or not opponent_character:
+            break
+
+        if is_your_turn_first:
+            result = your_attack(your_character, opponent_character, rng_engine,
+                                 event_log, opponent_team, opponent_character_index)
+            if result is None:
+                break
+            else:
+                opponent_character, opponent_character_index = result
+
+        else:
+            result = opponent_attack(your_character, opponent_character, rng_engine,
+                                     event_log, your_team, your_character_index)
+            if result is None:
+                break
+            else:
+                your_character, your_character_index = result
+
+    if opponent_character_index >= len(opponent_team):
+        outcome = True
+    elif your_character_index >= len(your_team):
+        outcome = False
+
+    return outcome, event_log
+
+
+def play_match(your_assignments: Path,
                opponent_assignments: Path,
                rng_engine: RngEngine) -> tuple[bool, list[str]]:
-    """Play the match out under the game engine. 
+    """Play the match out under the game engine.
 
     Arguments:
         your_assignments -- your assignments for all rounds in the match
@@ -94,37 +220,37 @@ def play_match(your_assignments: Path,
             - whether you won or not: True if you did, False otherwise
             - the turn-by-turn breakdown of what happened throughout
     """
-    
+
     is_your_turn_first = rng_engine.rng(probability=50)  # DO NOT change this line
-        
+
     return False, []
-    
-    
+
+
 if __name__ == "__main__":
     from argparse import ArgumentParser
-    
+
     parser = ArgumentParser()
-    parser.add_argument("--your_assignments", 
-                        type=str, 
+    parser.add_argument("--your_assignments",
+                        type=str,
                         help="The location of the team assignment file to read",
                         default="./samples/match_1/your_assignments",
                         required=False)
-    parser.add_argument("--opponent_assignments", 
-                        type=str, 
+    parser.add_argument("--opponent_assignments",
+                        type=str,
                         help="The location of the team assignment file to read",
                         default="./samples/match_1/opponent_assignments",
                         required=False)
-    parser.add_argument("--output_file", 
-                        type=str, 
+    parser.add_argument("--output_file",
+                        type=str,
                         help="The location to the text file to store the output in.",
-                        default=None, 
+                        default=None,
                         required=False)
     args = parser.parse_args()
     your_assignments = Path(args.your_assignments)
     opponent_assignments = Path(args.opponent_assignments)
     rng_engine = RngEngine()  # DO NOT change this line
-    match_outcome, description = play_match(your_assignments=your_assignments, 
-               opponent_assignments=opponent_assignments, 
+    match_outcome, description = play_match(your_assignments=your_assignments,
+               opponent_assignments=opponent_assignments,
                rng_engine=rng_engine)
     if args.output_file is not None:
         with open(args.output_file, "w") as f:
