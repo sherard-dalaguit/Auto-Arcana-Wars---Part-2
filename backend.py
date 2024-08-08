@@ -1,5 +1,4 @@
 from pathlib import Path
-from characters import Warrior
 from utils import RngEngine, BaseCharacter, Damage, Stats
 from game import read_data
 from typing import List
@@ -13,8 +12,6 @@ def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
     armor and magic resistance. The output should be the changes to be done to
     current_hp, provided as Stats
     """
-    # if damage is None:
-    #     return Stats()
 
     damage_dealt = 0
 
