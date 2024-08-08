@@ -92,13 +92,29 @@ class Stats(NamedTuple):
 
 
 class Damage(NamedTuple):
+	"""
+	A NamedTuple representing the amount of damage inflicted in an attack.
+
+	Attributes:
+		physical (float): The amount of physical damage inflicted. Defaults to 0
+		magic (float): The amount of magic damage inflicted. Defaults to 0
+	"""
 	physical: float = 0.0
 	magic: float = 0.0
 
 
 class Attack(NamedTuple):
+	"""
+	A NamedTuple representing an attack in the game.
+
+	Attributes:
+		damage (Damage): The damage inflicted by the attack. Defaults to None
+		stat_updates_to_self (Stats): The updates to the attacker's stats as
+		a result of the attack. Defaults to None.
+		description (str): A textual description of the attack. Defaults to None.
+	"""
 	damage: Damage = None
-	stat_updates_to_self: Stats = None  # for when a character's move changes its own stats
+	stat_updates_to_self: Stats = None
 	description: str = None
 
 
@@ -270,12 +286,15 @@ class BaseCharacter(abc.ABC):
 	@property
 	def basic_attack(self) -> Attack:
 		"""
-		Here, you implement the universal basic attack for all the characters.
-		It is based on the effective_stats of self. In the description, make sure to keep
-		track of your character's name, the damage done, the move, etc.
+		Creates a Basic Attack instance based on teh character's effective stats.
+		This represents a universal attack that every character can perform.
 
-		NOTE: this method is a property: it takes no input and its output does not change.
-		This is by design: damage done and HP lost are separate
+		The damage done is impacted by the character's physical power. The return Attack
+		instance encapsulates the damage done as well as a textual description of the action.
+
+		Returns:
+			Attack: An object representing the damage dealt by the attack
+			and a description of the attack itself.
 		"""
 		damage_dealt = Damage(self.effective_stats.physical_power)
 		basic_attack_description = f"""
@@ -286,6 +305,9 @@ class BaseCharacter(abc.ABC):
 	@property
 	@abc.abstractmethod
 	def special_attack(self) -> Attack:
+		"""
+		Abstract property for the character's special attack.
+		"""
 		pass
 
 	def add_item(self, item: BaseItem = None) -> None:

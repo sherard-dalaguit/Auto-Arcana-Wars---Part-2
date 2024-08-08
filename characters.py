@@ -21,7 +21,8 @@ class Ninja(BaseCharacter):
 		to 50% of the Ninja's physical power and magic power.
 
 		Returns:
-			float: The character's special attack damage
+			Attack: An instance of the Attack class, encapsulating
+			the damage and a description of the attack
 		"""
 
 		new_damage = 40 + 0.5 * self.effective_stats.physical_power + 0.5 * self.effective_stats.magic_power
@@ -53,7 +54,8 @@ class Mage(BaseCharacter):
 		to 125% of the Mage's magic power.
 
 		Returns:
-			 float: The character's special attack damage
+			 Attack: An instance of the Attack class, encapsulating
+			 the damage and a description of the attack
 		"""
 
 		new_damage = 1 + 1.25 * self.effective_stats.magic_power
@@ -86,7 +88,8 @@ class Warrior(BaseCharacter):
 		magic power.
 
 		Returns:
-			float: The character's special attack healing
+			Attack: An instance of the Attack class, encapsulating
+			the stat updates to self and a description of the attack
 		"""
 
 		healing_amount = 50 + 0.75 * self.effective_stats.physical_power + 3 * self.effective_stats.magic_power
@@ -94,4 +97,5 @@ class Warrior(BaseCharacter):
 		{self.name} performed {self.special_attack_name}, healing {healing_amount} HP.
 		"""
 
-		return Attack(damage=Damage(), stat_updates_to_self=Stats(current_hp=healing_amount), description=special_attack_description)
+		return Attack(damage=Damage(), stat_updates_to_self=Stats(current_hp=healing_amount),
+					  description=special_attack_description)

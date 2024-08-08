@@ -7,10 +7,18 @@ import os
 
 def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
     """
-    Given the damage to be received by a character,
-    calculate the actual damage done, taking into account the character's
-    armor and magic resistance. The output should be the changes to be done to
-    current_hp, provided as Stats
+    Calculates the actual damage dealt to a character based on their stats
+    and the incoming damage.
+
+    Damage is reduced by the character's armor or magic resistance.
+
+    Args:
+        damage (Damage): The incoming damage, which can be physical and/or magical.
+        character_stats (Stats): The stats of the character getting hit.
+
+    Returns:
+        Stats: A Stats object where the current_hp attribute is set to
+        the negative of the actual damage dealt.
     """
 
     damage_dealt = 0
@@ -27,9 +35,19 @@ def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
 
 def calculate_miss_chance(damage: Damage, character_stats: Stats) -> float:
     """
-    Given the damage to be received by a character,
-    calculate the percentage probability (a number between 0 and 100)
-    that the character has to miss the damage entirely.
+    Calculates the chance that an attack will miss based on the character's
+    stats and the type of incoming damage.
+
+    For physical damage, the miss chance is proportional to the character's armor / 10.
+    Similarly, for magical damage, it is proportional to the magic resistance / 10.
+    If there is no incoming damage, the miss chance is 0.
+
+    Args:
+        damage (Damage): The incoming damage, which can be physical or magical
+        character_stats (Stats): The stats of the character aiming to dodge the attack
+
+    Returns:
+        float: The calculated miss chance
     """
 
     if damage.physical > 0:
@@ -117,9 +135,6 @@ def play_turn(your_character: BaseCharacter, opponent_character: BaseCharacter,
               is_your_turn: bool, rng_engine: RngEngine) -> str:
     """Take a turn in the game, updating the character's stats and returning
         a description of what happened in the turn
-        
-    Raises:
-        ValueError if any of the characters are already dead (0 current_hp)
 
     Arguments:
         your_character -- your character in the combat
