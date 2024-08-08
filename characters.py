@@ -94,4 +94,4 @@ class Warrior(BaseCharacter):
 		{self.name} performed {self.special_attack_name}, healing {healing_amount} HP.
 		"""
 
-		return Attack(stat_updates_to_self=Stats(current_hp=healing_amount), description=special_attack_description)
+		return Attack(damage=Damage(), stat_updates_to_self=Stats(current_hp=healing_amount), description=special_attack_description)
