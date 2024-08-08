@@ -1,7 +1,9 @@
 from pathlib import Path
+from characters import Warrior
 from utils import RngEngine, BaseCharacter, Damage, Stats
 from game import read_data
 from typing import List
+import os
 
 
 def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
@@ -11,6 +13,8 @@ def calculate_damage_taken(damage: Damage, character_stats: Stats) -> Stats:
     armor and magic resistance. The output should be the changes to be done to
     current_hp, provided as Stats
     """
+    # if damage is None:
+    #     return Stats()
 
     damage_dealt = 0
 
@@ -38,6 +42,8 @@ def calculate_miss_chance(damage: Damage, character_stats: Stats) -> float:
     elif damage.magic > 0:
         magic_miss_chance = character_stats.magic_resistance / 10
         return magic_miss_chance
+
+    return 0
 
 
 def your_attack(your_character: BaseCharacter, opponent_character: BaseCharacter,
@@ -197,10 +203,7 @@ def play_round(your_assignment: Path, opponent_assignment: Path,
             else:
                 your_character, your_character_index = result
 
-    if opponent_character_index >= len(opponent_team):
-        outcome = True
-    elif your_character_index >= len(your_team):
-        outcome = False
+    outcome = your_character_index > opponent_character_index
 
     return outcome, event_log
 
@@ -223,7 +226,29 @@ def play_match(your_assignments: Path,
 
     is_your_turn_first = rng_engine.rng(probability=50)  # DO NOT change this line
 
-    return False, []
+    your_points, opponent_points = 0, 0
+
+    your_files = os.listdir(your_assignments)
+    opponent_files = os.listdir(opponent_assignments)
+
+    match_log = []
+
+    for your_file, opponent_file in zip(your_files, opponent_files):
+        your_assignment = your_assignments / your_file
+        opponent_assignment = opponent_assignments / opponent_file
+
+        outcome, round_log = play_round(your_assignment, opponent_assignment, is_your_turn_first, rng_engine)
+        if outcome:
+            your_points += 1
+        else:
+            opponent_points += 1
+
+        for turn in round_log:
+            match_log.append(turn)
+
+    match_won = your_points > opponent_points
+
+    return match_won, match_log
 
 
 if __name__ == "__main__":
